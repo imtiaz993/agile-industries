@@ -47,10 +47,10 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex flex-col lg:pr-40 ml-8 sm:ml-0">
-              <Link to="/" className="text-sm font-medium text-light">
+              <Link to="/about" className="text-sm font-medium text-light">
                 About Us
               </Link>
-              <Link to="/" className="mt-6 text-sm font-medium text-light">
+              <Link to="/contact" className="mt-6 text-sm font-medium text-light">
                 Contact Us
               </Link>
               <div className="flex items-center mt-6">

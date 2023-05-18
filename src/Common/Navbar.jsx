@@ -24,10 +24,10 @@ const Navbar = () => {
             <Link className="text-gray text-base mr-6" to="/">
               Case Studies
             </Link>
-            <Link className="text-gray text-base mr-6" to="/">
+            <Link className="text-gray text-base mr-6" to="/about">
               About Us
             </Link>
-            <Link className="text-gray text-base mr-6" to="/">
+            <Link className="text-gray text-base mr-6" to="/contact">
               Contact Us
             </Link>
           </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
       <div
         className={`lg:hidden fixed z-20 ${
           toggleNavbar && "h-screen"
-        } top-0 w-screen px-4 py-2 bg-white border-b-2`}
+        } top-0 w-screen px-4 py-2 bg-white border-b-2 border-b-ligherGray`}
       >
         <div className="flex justify-between items-center">
           <div className="w-56">
@@ -103,7 +103,7 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               className="text-gray text-base mb-4"
-              to="/"
+              to="/about"
             >
               About Us
             </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               className="text-gray text-base mb-4"
-              to="/"
+              to="/contact"
             >
               Contact Us
             </Link>
