@@ -1,12 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,jsx}"],
-   theme: {
+  theme: {
     extend: {
-      colors: {
-        'dark-gray': '#29303D',
+      backgroundImage: {
+        "hero-bg": "url('Assets/images/home-hero-bg.png')",
       },
-    }
+      colors: {
+        blue: "#004A79",
+        darkBlue:"#002A42",
+        green: "#0BEAA1",
+        gray: "#666666",
+        ligherGray:'#EEEEEE',
+        light: "#FAFAFA",
+      },
+    },
   },
   plugins: [],
 };

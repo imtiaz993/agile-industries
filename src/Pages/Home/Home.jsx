@@ -1,12 +1,15 @@
 import React from "react";
+import DigitalTransmission from "./Components/DigitalTransmission";
+import CoreProducts from "./Components/CoreProducts";
+import Slider from "./Components/Slider";
 
 const Home = () => {
   return (
-    <div>
-    <h1 className="text-3xl text-red-600">
-      AGILE INDUSTRIES
-    </h1>
-    </div>
+    <>
+      <Slider />
+      <DigitalTransmission />
+      <CoreProducts />
+    </>
   );
 };
 
