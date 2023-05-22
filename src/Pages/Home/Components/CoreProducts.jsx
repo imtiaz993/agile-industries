@@ -80,7 +80,7 @@ const CoreProducts = () => {
               maxWidth: "320px",
             }}
           >
-            <img src={PowerEnergy} alt="" />
+            <img width="100%" src={PowerEnergy} alt="" />
           </Box>
 
           <Typography
@@ -115,7 +115,7 @@ const CoreProducts = () => {
               maxWidth: "320px",
             }}
           >
-            <img src={AirCondition} alt="" />
+            <img width="100%" src={AirCondition} alt="" />
           </Box>
 
           <Typography
@@ -150,7 +150,7 @@ const CoreProducts = () => {
               maxWidth: "320px",
             }}
           >
-            <img src={OEM} alt="" />
+            <img width="100%" src={OEM} alt="" />
           </Box>
 
           <Typography
