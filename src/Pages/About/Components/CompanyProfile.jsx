@@ -6,7 +6,7 @@ const CompanyProfile = () => {
   return (
     <Box
       sx={(theme) => ({
-        dispay: "grid",
+        display: "grid",
         gridTemplateColumns: "1fr",
         gap: "48px",
         marginY: "64px",
