@@ -1,16 +1,37 @@
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 const GetInTouch = () => {
   return (
-    <div className="my-12">
-      <h1 className="text-2xl lg:text-3xl font-semibold text-[#004A79] text-center">
+    <Box sx={{ marginTop: "48px" }}>
+      <Typography
+        sx={(theme) => ({
+          color: "#004A79",
+          textAlign: "center",
+          fontSize: "24px",
+          fontWeight: "600",
+          [theme.breakpoints.up("lg")]: {
+            fontSize: "30px",
+          },
+        })}
+      >
+        {" "}
         Get in touch!
-      </h1>
-      <p className="mt-3 text-lg font- text-[#666666] text-center max-w-lg mx-auto">
+      </Typography>
+      <Typography
+        sx={{
+          marginTop: "12px",
+          color: "#666666",
+          textAlign: "center",
+          fontSize: "18px",
+          maxWidth: "576px",
+          marginX: "auto",
+        }}
+      >
         Eaque suscipit numquam nesciunt, temporibus? Neque veniam similique
         dolorem beatae iste, inventore incidunt adipisci.
-      </p>
-    </div>
+      </Typography>
+    </Box>
   );
 };
 

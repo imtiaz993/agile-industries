@@ -2,41 +2,171 @@ import React from "react";
 import PowerEnergy from "../../../Assets/images/power-energy.png";
 import AirCondition from "../../../Assets/images/air-condition.png";
 import OEM from "../../../Assets/images/oem.png";
+import { Box, Typography } from "@mui/material";
 
 const CoreProducts = () => {
   return (
-    <div className="mt-20 w-5/6 lg:w-3/4 mx-auto">
-      <h1 className="text-center text-gray font-medium text-2xl lg:text-3xl">
-        Core Of{" "}
-        <span className="text-blue font-semibold">Our Products</span>
-      </h1>
-      <div className="mt-10 pb-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
-        <div className=" rounded-xl shadow-xl px-2 py-4 border border-gray">
-          <div className="max-w-xs  h-44 mx-auto flex justify-center items-center">
+    <Box
+      sx={(theme) => ({
+        marginTop: "80px",
+        width: "83%",
+        marginX: "auto",
+        [theme.breakpoints.up("lg")]: {
+          width: "75%",
+        },
+      })}
+    >
+      <Box sx={{ textAlign: "center" }}>
+        <Typography
+          sx={(theme) => ({
+            display: "inline",
+            color: "#666666",
+            fontWeight: "500",
+            fontSize: "24px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
+          Core Of{" "}
+        </Typography>
+        <Typography
+          sx={(theme) => ({
+            display: "inline",
+            color: "#004A79",
+            fontWeight: "600",
+            fontSize: "24px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
+          Our Products
+        </Typography>
+      </Box>
+      <Box
+        sx={(theme) => ({
+          marginTop: "40px",
+          paddingBottom: "32px",
+          display: "grid",
+          gridTemplateColumns: "1fr",
+          gap: "32px",
+          [theme.breakpoints.up("md")]: {
+            gridTemplateColumns: "1fr 1fr",
+            gap: "16px",
+          },
+          [theme.breakpoints.up("lg")]: {
+            gridTemplateColumns: "1fr 1fr 1fr",
+          },
+        })}
+      >
+        <Box
+          sx={{
+            borderRadius: "12px",
+            boxShadow:
+              "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+            paddingX: "8px",
+            paddingY: "16px",
+            border: "1px solid #666666",
+          }}
+        >
+          <Box
+            sx={{
+              height: "176px",
+              marginX: "auto",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              maxWidth: "320px",
+            }}
+          >
             <img src={PowerEnergy} alt="" />
-          </div>
-          <p className="text-center text-base text-gray font-semibold mt-2">
+          </Box>
+
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#666666",
+              fontWeight: "600",
+              marginTop: "8px",
+            }}
+          >
             Power & Energy Monitoring
-          </p>
-        </div>
-        <div className=" rounded-xl shadow-xl px-2 py-4 border border-gray">
-          <div className="max-w-xs  h-44 mx-auto flex justify-center items-center">
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            borderRadius: "12px",
+            boxShadow:
+              "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+            paddingX: "8px",
+            paddingY: "16px",
+            border: "1px solid #666666",
+          }}
+        >
+          <Box
+            sx={{
+              height: "176px",
+              marginX: "auto",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              maxWidth: "320px",
+            }}
+          >
             <img src={AirCondition} alt="" />
-          </div>
-          <p className="text-center text-base text-gray font-semibold mt-2">
+          </Box>
+
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#666666",
+              fontWeight: "600",
+              marginTop: "8px",
+            }}
+          >
             Air Conditioner & Controllers
-          </p>
-        </div>
-        <div className=" rounded-xl shadow-xl px-2 py-4 border border-gray">
-          <div className="max-w-xs  h-44 mx-auto flex justify-center items-center">
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            borderRadius: "12px",
+            boxShadow:
+              "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+            paddingX: "8px",
+            paddingY: "16px",
+            border: "1px solid #666666",
+          }}
+        >
+          <Box
+            sx={{
+              height: "176px",
+              marginX: "auto",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              maxWidth: "320px",
+            }}
+          >
             <img src={OEM} alt="" />
-          </div>
-          <p className="text-center text-base text-gray font-semibold mt-2">
+          </Box>
+
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#666666",
+              fontWeight: "600",
+              marginTop: "8px",
+            }}
+          >
             IoT Development for OEMs & Prototyping
-          </p>
-        </div>
-      </div>
-    </div>
+          </Typography>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

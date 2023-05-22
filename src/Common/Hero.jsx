@@ -1,18 +1,77 @@
+import { Box, Typography } from "@mui/material";
 import React from "react";
 
 const Hero = ({ title, subTitle, text }) => {
   return (
-    <div className="bg-pages-hero-bg bg-no-repeat bg-cover bg-center w-full h-[350px] lg:h-[400px]">
-      <div className="w-4/5 mx-auto">
-        <h1 className="pt-28 lg:pt-44 text-center text-3xl lg:text-5xl font-semibold text-light leading-[150%]">
-          {title} {" "}
-          <span className="text-green">{subTitle}</span>
-        </h1>
-        <p className=" text-center  text-base text-white max-w-2xl mx-auto mt-4">
+    <Box
+      sx={(theme) => ({
+        width: "100%",
+        height: "350px",
+        backgroundImage: 'url("/pages-hero-bg.png")',
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        [theme.breakpoints.up("lg")]: {
+          height: "400px",
+        },
+      })}
+    >
+      <Box sx={{ width: "80%", marginX: "auto" }}>
+        <Box
+          sx={(theme) => ({
+            display: "flex",
+            justifyContent:'center',
+            paddingTop: "112px",
+            [theme.breakpoints.up("lg")]: {
+              paddingTop: "176px",
+            },
+          })}
+        >
+          <Typography
+            sx={(theme) => ({
+              color: "#FAFAFA",
+              textAlign: "center",
+              fontSize: "30px",
+              fontWeight: "600",
+              lineHeight: "150%",
+              marginRight:'10px',
+              [theme.breakpoints.up("lg")]: {
+                fontSize: "48px",
+              },
+            })}
+          >
+            {title}
+          </Typography>
+          <Typography
+            sx={(theme) => ({
+              color: "#0BEAA1",
+              textAlign: "center",
+              fontSize: "30px",
+              fontWeight: "600",
+              lineHeight: "150%",
+              [theme.breakpoints.up("lg")]: {
+                fontSize: "48px",
+              },
+            })}
+          >
+            {subTitle}
+          </Typography>
+        </Box>
+
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontSize: "16px",
+            color: "white",
+            maxWidth: "672px",
+            marginX: "auto",
+            marginTop: "16px",
+          }}
+        >
           {text}
-        </p>
-      </div>
-    </div>
+        </Typography>
+      </Box>
+    </Box>
   );
 };
 

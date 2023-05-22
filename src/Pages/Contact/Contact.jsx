@@ -3,6 +3,7 @@ import Hero from "../../Common/Hero";
 import GetInTouch from "./Components/GetInTouch";
 import Form from "./Components/Form";
 import Info from "./Components/Info";
+import { Box } from "@mui/material";
 
 const Contact = () => {
   return (
@@ -14,11 +15,11 @@ const Contact = () => {
           eiusmod tempor , inventore incidunt adipisci. Nisi ut aliquip ex ea
           commodo consequatuis aute irure dolor in."
       />
-      <div className="w-5/6 mx-auto">
+      <Box sx={{ width: "83%", marginX: "auto" }}>
         <GetInTouch />
         <Info />
         <Form />
-      </div>
+      </Box>
     </>
   );
 };

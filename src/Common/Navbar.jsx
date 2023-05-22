@@ -1,80 +1,212 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/icons/logo.svg";
+import { Box, Button, Typography } from "@mui/material";
 
 const Navbar = () => {
   const [toggleNavbar, setToggleNavbar] = useState(false);
   return (
     <>
-      <div className="hidden lg:block fixed z-20 top-0 w-full">
-        <div className="border border-gray-600 border-t-0  xl:w-5/6 mx-auto py-4 px-4 bg-white rounded-bl-xl rounded-br-xl flex justify-between items-center">
-          <div className="w-56">
-            <img className="w-11/12" src={Logo} alt="" />
-          </div>
-          <div>
-            <Link className="text-gray text-base mr-6" to="/">
+      <Box
+        sx={(theme) => ({
+          display: "none",
+          position: "fixed",
+          zIndex: "20",
+          top: "0px",
+          width: "100%",
+          [theme.breakpoints.up("lg")]: {
+            display: "block",
+          },
+        })}
+      >
+        <Box
+          sx={(theme) => ({
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            border: "1px solid rgb(75 85 99)",
+            borderTop: "0px",
+            marginX: "auto",
+            padding: "16px",
+            backgroundColor: "white",
+            borderRadius: "0px 0px 12px 12px",
+            [theme.breakpoints.up("xl")]: {
+              width: "83%",
+            },
+          })}
+        >
+          <Box sx={{ width: "224px" }}>
+            <img width="90%" src={Logo} alt="" />
+          </Box>
+          <Box>
+            <Link
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginLeft: "24px",
+                textDecoration: "none",
+              }}
+              to="/"
+            >
               Home
             </Link>
-            <select className="text-gray text-base mr-6 outline-none">
-              <option className="hidden">Services</option>
+            <select
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginLeft: "24px",
+                outline: "none",
+                border: "none",
+              }}
+            >
+              <option style={{ display: "none" }}>Services</option>
               <option>Service 1</option>
               <option>Service 2</option>
               <option>Service 3</option>
             </select>
-            <Link className="text-gray text-base mr-6" to="/">
+            <Link
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginLeft: "24px",
+                textDecoration: "none",
+              }}
+              to="/"
+            >
               Case Studies
             </Link>
-            <Link className="text-gray text-base mr-6" to="/about">
+            <Link
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginLeft: "24px",
+                textDecoration: "none",
+              }}
+              to="/about"
+            >
               About Us
             </Link>
-            <Link className="text-gray text-base mr-6" to="/contact">
+            <Link
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginLeft: "24px",
+                textDecoration: "none",
+              }}
+              to="/contact"
+            >
               Contact Us
             </Link>
-          </div>
-          <div>
-            <button className="px-10 py-2 bg-blue rounded-xl font-semibold text-light">
+          </Box>
+          <Box>
+            <Button
+              sx={{
+                paddingX: "40px",
+                paddingY: "8px",
+                backgroundColor: "#004A79",
+                borderRadius: "12px",
+                fontWeight: "600",
+                color: "#FAFAFA",
+              }}
+            >
               Portal
-            </button>
-          </div>
-        </div>
-      </div>
-      <div
-        className={`lg:hidden fixed z-20 ${
-          toggleNavbar && "h-screen"
-        } top-0 w-screen px-4 py-2 bg-white border-b-2 border-b-ligherGray`}
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+
+      <Box
+        sx={(theme) => ({
+          position: "fixed",
+          zIndex: "20",
+          top: "0px",
+          width: "100%",
+          backgroundColor: "white",
+          height: toggleNavbar && "100vh",
+          [theme.breakpoints.up("lg")]: {
+            display: "none",
+          },
+        })}
       >
-        <div className="flex justify-between items-center">
-          <div className="w-56">
-            <img className="w-4/5" src={Logo} alt="" />
-          </div>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            paddingX: "16px",
+            paddingY: "8px",
+            backgroundColor: "white",
+            borderBottom: "2px solid lightGray",
+          }}
+        >
+          <Box sx={{ width: "224px" }}>
+            <img width="80%" src={Logo} alt="" />
+          </Box>
           {!toggleNavbar && (
-            <div
+            <Box
               onClick={() => {
                 setToggleNavbar(true);
               }}
             >
-              <span className="w-8 h-1 block my-1 bg-blue"></span>
-              <span className="w-8 h-1 block my-1 bg-blue"></span>
-              <span className="w-8 h-1 block my-1 bg-blue"></span>
-            </div>
+              <Box
+                sx={{
+                  width: "32px",
+                  height: "4px",
+                  marginY: "4px",
+                  backgroundColor: "#004A79",
+                }}
+              ></Box>
+              <Box
+                sx={{
+                  width: "32px",
+                  height: "4px",
+                  marginY: "4px",
+                  backgroundColor: "#004A79",
+                }}
+              ></Box>
+              <Box
+                sx={{
+                  width: "32px",
+                  height: "4px",
+                  marginY: "4px",
+                  backgroundColor: "#004A79",
+                }}
+              ></Box>
+            </Box>
           )}
           {toggleNavbar && (
-            <div
+            <Box
               onClick={() => {
                 setToggleNavbar(false);
               }}
             >
-              <span className="block text-4xl fot-bold text-blue">X</span>
-            </div>
+              <Typography
+                sx={{ fontSize: "36px", fontWeight: "700", color: "#004A79" }}
+              >
+                X
+              </Typography>
+            </Box>
           )}
-        </div>
+        </Box>
         {toggleNavbar && (
-          <div className="ml-2 mt-8 inline-flex flex-col">
+          <Box
+            sx={{
+              marginLeft: "9px",
+              marginTop: "32px",
+              display: "inline-flex",
+              flexDirection: "column",
+            }}
+          >
             <Link
               onClick={() => {
                 setToggleNavbar(false);
               }}
-              className="text-gray text-base mb-4"
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "16px",
+                textDecoration: "none",
+              }}
               to="/"
             >
               Home
@@ -83,8 +215,16 @@ const Navbar = () => {
               onChange={() => {
                 setToggleNavbar(false);
               }}
-              className="text-gray text-base mb-4 -ml-1"
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "16px",
+                textDecoration: "none",
+                marginLeft: "-4px",
+                border: "none",
+              }}
             >
+              <option style={{ display: "none" }}>Services</option>
               <option>Service 1</option>
               <option>Service 2</option>
               <option>Service 3</option>
@@ -93,7 +233,12 @@ const Navbar = () => {
               onClick={() => {
                 setToggleNavbar(false);
               }}
-              className="text-gray text-base mb-4"
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "16px",
+                textDecoration: "none",
+              }}
               to="/"
             >
               Case Studies
@@ -102,7 +247,12 @@ const Navbar = () => {
               onClick={() => {
                 setToggleNavbar(false);
               }}
-              className="text-gray text-base mb-4"
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "16px",
+                textDecoration: "none",
+              }}
               to="/about"
             >
               About Us
@@ -111,22 +261,34 @@ const Navbar = () => {
               onClick={() => {
                 setToggleNavbar(false);
               }}
-              className="text-gray text-base mb-4"
+              style={{
+                color: "#666666",
+                fontSize: "16px",
+                marginBottom: "16px",
+                textDecoration: "none",
+              }}
               to="/contact"
             >
               Contact Us
             </Link>
-            <button
+            <Button
               onClick={() => {
                 setToggleNavbar(false);
               }}
-              className="px-10 py-2 bg-blue rounded-xl font-semibold text-light"
+              sx={{
+                paddingX: "40px",
+                paddingY: "8px",
+                backgroundColor: "#004A79",
+                borderRadius: "12px",
+                fontWeight: "600",
+                color: "#FAFAFA",
+              }}
             >
               Portal
-            </button>
-          </div>
+            </Button>
+          </Box>
         )}
-      </div>
+      </Box>
     </>
   );
 };

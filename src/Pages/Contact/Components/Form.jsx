@@ -1,43 +1,142 @@
+import { Box, Button, TextField } from "@mui/material";
 import React from "react";
 
 const Form = () => {
   return (
-    <form className="rounded-2xl shadow-xl py-16 px-8 mt-10">
-      <div className="grid md:grid-cols-2 gap-3">
-        <div>
-          <input
+    <form
+      style={{
+        borderRadius: "12px",
+        boxShadow: "1px 1px 10px rgba(0, 0, 0, 0.24)",
+        padding: "64px 32px",
+        marginTop: "40px",
+      }}
+    >
+      <Box
+        sx={(theme) => ({
+          display: "grid",
+          gap: "12px",
+          gridTemplateColumns: "1fr",
+          [theme.breakpoints.up("md")]: {
+            gridTemplateColumns: "1fr 1fr",
+          },
+        })}
+      >
+        <Box>
+          <TextField
+            sx={{
+              width: "100%",
+              marginBottom: "12px",
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  border: "none",
+                },
+                "&.Mui-focused fieldset": {
+                  border: "2px solid #004A79",
+                },
+              },
+            }}
+            inputProps={{
+              style: {
+                backgroundColor: "#EEEEEE",
+                padding: "10px 16px",
+                borderRadius: "10px",
+              },
+            }}
             required
-            className="bg-[#EEEEEE] rounded-lg w-full py-2.5 px-4 mb-3 outline-1 outline-blue"
             type="text"
             placeholder="Your Full Name"
           />
-          <input
+          <TextField
+            sx={{
+              width: "100%",
+              marginBottom: "12px",
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  border: "none",
+                },
+                "&.Mui-focused fieldset": {
+                  border: "2px solid #004A79",
+                },
+              },
+            }}
+            inputProps={{
+              style: {
+                backgroundColor: "#EEEEEE",
+                padding: "10px 16px",
+                borderRadius: "10px",
+              },
+            }}
             required
-            className="bg-[#EEEEEE] rounded-lg w-full py-2.5 px-4 mb-3.5 outline-1 outline-blue"
             type="email"
             placeholder="Your Email"
           />
-          <input
+          <TextField
+            sx={{
+              width: "100%",
+              marginBottom: "12px",
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  border: "none",
+                },
+                "&.Mui-focused fieldset": {
+                  border: "2px solid #004A79",
+                },
+              },
+            }}
+            inputProps={{
+              style: {
+                backgroundColor: "#EEEEEE",
+                padding: "10px 16px",
+                borderRadius: "10px",
+              },
+            }}
             required
-            className="bg-[#EEEEEE] rounded-lg w-full py-2.5 px-4 outline-1 outline-blue"
             type="tel"
-            placeholder="Your Phone no"
+            placeholder="Your Phone Number"
           />
-        </div>
-        <div>
+        </Box>
           <textarea
             required
-            className="bg-[#EEEEEE] rounded-lg w-full py-2 px-4 resize-none outline-1 outline-blue"
+            style={{
+              fontSize: "16px",
+              fontFamily: "ui-sans-serif, system-ui",
+              backgroundColor: "#EEEEEE",
+              borderRadius: "10px",
+              border: "none",
+              minWidth: "90%",
+              padding: "12px 16px",
+              resize: "none",
+              outlineColor: "#004A79",
+            }}
             placeholder="Message"
             rows={6}
           />
-        </div>
-      </div>
-      <div className="md:w-1/2 mx-auto mt-5">
-        <button className="bg-blue rounded-xl text-white font-medium text-lg py-3 w-full">
+      </Box>
+      <Box
+        sx={(theme) => ({
+          marginTop: "20px",
+          marginX: "auto",
+          [theme.breakpoints.up("md")]: {
+            width: "50%",
+          },
+        })}
+      >
+        <Button
+          sx={{
+            backgroundColor: "#004A79",
+            borderRadius: "12px",
+            color: "white",
+            fontSize: "18px",
+            paddingY: "10px",
+            width: "100%",
+            "&:hover": {
+              backgroundColor: "#004A79",
+            },
+          }}
+        >
           Submit
-        </button>
-      </div>
+        </Button>
+      </Box>
     </form>
   );
 };

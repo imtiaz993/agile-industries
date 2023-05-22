@@ -1,24 +1,66 @@
 import React from "react";
 import PowerEnergy from "../../../Assets/images/power-energy.png";
+import { Box, Typography } from "@mui/material";
 
 const DigitalTransmission = () => {
   return (
-    <div className="mt-20 w-5/6 lg:w-3/5 mx-auto">
-      <h1 className="text-center text-gray font-medium text-2xl lg:text-3xl">
-        Start Your{" "}
-        <span className="text-blue font-semibold">
+    <Box
+      sx={(theme) => ({
+        marginTop: "80px",
+        width: "83%",
+        textAlign: "center",
+        marginX: "auto",
+        [theme.breakpoints.up("sm")]: {
+          width: "60%",
+        },
+      })}
+    >
+      <Box>
+        <Typography
+          sx={(theme) => ({
+            display: "inline",
+            color: "#666666",
+            fontWeight: "500",
+            fontSize: "24px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
+          Start Your{" "}
+        </Typography>
+        <Typography
+          sx={(theme) => ({
+            display: "inline",
+
+            color: "#004A79",
+            fontWeight: "600",
+            fontSize: "24px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
           Digital Transformation Journey
-        </span>
-      </h1>
-      <p className="mb-6 text-center mt-4 text-gray text-base">
+        </Typography>
+      </Box>
+      <Typography
+        sx={{
+          marginBottom: "24px",
+          textAlign: "center",
+          marginTop: "16px",
+          color: "#666666",
+          fontSize: "16px",
+        }}
+      >
         Our purpose is to help OEMs reach their digital transformation goals and
         adapt to the modern industry. Specialized in industrial IoT, we provide
         full service from electronics design and development, prototyping,
         software and hardware configurations, programming, testing, and
         manufacturing.
-      </p>
-      <img className="mx-auto lg:w-1/2" src={PowerEnergy} alt="" />
-    </div>
+      </Typography>
+      <img src={PowerEnergy} alt="" />
+    </Box>
   );
 };
 

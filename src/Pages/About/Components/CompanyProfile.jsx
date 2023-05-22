@@ -1,44 +1,94 @@
 import React from "react";
 import AboutCompany from "../../../Assets/images/about-company.png";
+import { Box, Typography } from "@mui/material";
 
 const CompanyProfile = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-12 my-16 lg:my-20">
-      <div className="hidden lg:flex justify-end">
-        <img className="rounded-xl" src={AboutCompany} alt="" />
-      </div>
-      <div className="max-w-md mx-auto lg:mx-0">
-        <p className="text-base text-[#333333] font-medium">
+    <Box
+      sx={(theme) => ({
+        dispay: "grid",
+        gridTemplateColumns: "1fr",
+        gap: "48px",
+        marginY: "64px",
+        [theme.breakpoints.up("lg")]: {
+          gridTemplateColumns: "1fr 1fr",
+          marginY: "80px",
+        },
+      })}
+    >
+      <Box
+        sx={(theme) => ({
+          display: "none",
+          [theme.breakpoints.up("lg")]: {
+            display: "flex",
+            justifyContent: "flex-end",
+          },
+        })}
+      >
+        <img style={{ borderRadius: "12px" }} src={AboutCompany} alt="" />
+      </Box>
+      <Box
+        sx={(theme) => ({
+          maxWidth: "512px",
+          marginX: "auto",
+          [theme.breakpoints.up("lg")]: {
+            marginX: "0",
+          },
+        })}
+      >
+        <Typography
+          sx={{ fontSize: "16px", color: "#333333", fontWeight: "500" }}
+        >
           ABOUT OUR COMPANY
-        </p>
-        <h1 className="mt-1 text-blue text-2xl lg:text-3xl font-semibold">
+        </Typography>
+        <Typography
+          sx={(theme) => ({
+            marginTop: "4px",
+            color: "#004A79",
+            fontSize: "24px",
+            fontWeight: "600",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
           Explore a different way!
-        </h1>
-        <div className="text-[#666666] text-base">
-          <p className="mt-6">
+        </Typography>
+        <Box>
+          <Typography
+            sx={{ color: "#666666", fontSize: "16px", marginTop: "24px" }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="mt-4">
+          </Typography>
+          <Typography
+            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+          >
             Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderi t in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
-          </p>
-          <p className="mt-4">
+          </Typography>
+          <Typography
+            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="mt-4">
+          </Typography>
+          <Typography
+            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <p className="mt-4">
+          </Typography>
+          <Typography
+            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+          >
             Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-          </p>
-        </div>
-      </div>
-    </div>
+          </Typography>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
