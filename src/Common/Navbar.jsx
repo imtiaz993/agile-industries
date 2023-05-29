@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/icons/logo.svg";
-import { Box, Button, Typography } from "@mui/material";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [toggleNavbar, setToggleNavbar] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  useEffect(() => {
+    if (!location.pathname.includes("service")) {
+      setSelectedService("");
+    }
+  }, [location]);
+
+  useEffect(() => {
+    navigate(selectedService);
+  }, [selectedService]);
+
   return (
     <>
       <Box
@@ -35,9 +50,11 @@ const Navbar = () => {
             },
           })}
         >
-          <Box sx={{ width: "224px" }}>
-            <img width="90%" src={Logo} alt="" />
-          </Box>
+          <Link to="/">
+            <Box sx={{ width: "224px" }}>
+              <img width="90%" src={Logo} alt="" />
+            </Box>
+          </Link>
           <Box>
             <Link
               style={{
@@ -57,12 +74,17 @@ const Navbar = () => {
                 marginLeft: "24px",
                 outline: "none",
                 border: "none",
+                cursor: "pointer",
+              }}
+              value={selectedService}
+              onChange={(e) => {
+                setSelectedService(e.target.value);
               }}
             >
               <option style={{ display: "none" }}>Services</option>
-              <option>Service 1</option>
-              <option>Service 2</option>
-              <option>Service 3</option>
+              <option value="service-one">Service 1</option>
+              <option value="service-two">Service 2</option>
+              <option value="service-three">Service 3</option>
             </select>
             <Link
               style={{
@@ -139,9 +161,11 @@ const Navbar = () => {
             borderBottom: "2px solid lightGray",
           }}
         >
-          <Box sx={{ width: "224px" }}>
-            <img width="80%" src={Logo} alt="" />
-          </Box>
+          <Link to="/">
+            <Box sx={{ width: "224px" }}>
+              <img width="80%" src={Logo} alt="" />
+            </Box>
+          </Link>
           {!toggleNavbar && (
             <Box
               onClick={() => {
@@ -212,8 +236,10 @@ const Navbar = () => {
               Home
             </Link>
             <select
-              onChange={() => {
+              value={selectedService}
+              onChange={(e) => {
                 setToggleNavbar(false);
+                setSelectedService(e.target.value);
               }}
               style={{
                 color: "#666666",
@@ -222,12 +248,13 @@ const Navbar = () => {
                 textDecoration: "none",
                 marginLeft: "-4px",
                 border: "none",
+                cursor: "pointer",
               }}
             >
               <option style={{ display: "none" }}>Services</option>
-              <option>Service 1</option>
-              <option>Service 2</option>
-              <option>Service 3</option>
+              <option value="service-one">Service 1</option>
+              <option value="service-two">Service 2</option>
+              <option value="service-three">Service 3</option>
             </select>
             <Link
               onClick={() => {

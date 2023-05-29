@@ -36,7 +36,9 @@ const Footer = () => {
               },
             })}
           >
-            <img src={WhiteLogo} alt="" />
+            <Link to="/">
+              <img src={WhiteLogo} alt="" />
+            </Link>
             <Box
               sx={{ marginTop: "16px", display: "flex", alignItems: "center" }}
             >
