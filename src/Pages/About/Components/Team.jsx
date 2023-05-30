@@ -10,20 +10,6 @@ const Team = () => {
           sx={(theme) => ({
             fontSize: "24px",
             fontWeight: "600",
-            textAlign: "center",
-            color: "#666666",
-            marginRight: "10px",
-            [theme.breakpoints.up("lg")]: {
-              fontSize: "30px",
-            },
-          })}
-        >
-          Meet
-        </Typography>
-        <Typography
-          sx={(theme) => ({
-            fontSize: "24px",
-            fontWeight: "600",
             color: "#004A79",
             textAlign: "center",
             [theme.breakpoints.up("lg")]: {
@@ -31,7 +17,7 @@ const Team = () => {
             },
           })}
         >
-          Our Team
+          Meet Our Team
         </Typography>
       </Box>
       <Typography
@@ -76,7 +62,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -117,7 +103,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -158,7 +144,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -199,7 +185,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -240,7 +226,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -281,7 +267,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -322,7 +308,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",
@@ -363,7 +349,7 @@ const Team = () => {
             sx={(theme) => ({
               borderRadius: "10px",
               boxShadow: "0px 2px 13px rgba(0, 0, 0, 0.25)",
-              backgroundColor:"white",
+              backgroundColor: "white",
               paddingY: "12px",
               paddingX: "16px",
               position: "relative",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ServiceMainImage from "../../../../Assets/images/service-main-image.png";
+import ServiceMainImage from "../../../../Assets/images/Picture12.jpg";
 
 const MainSection = () => {
   return (
@@ -12,18 +12,21 @@ const MainSection = () => {
         },
       })}
     >
-      <Box>
-        <img width="100%" src={ServiceMainImage} alt="" />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <img width="75%" src={ServiceMainImage} alt="" />
       </Box>
       <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore Eu omnes nonumes reformidans sit, et eam
-        aperiam pertinacia. Te posse nostro labores pri, agam audire eu mei,
-        natum voluptaria an mel. Ut illud maiestatis nec, vis cu propriae
-        deterruisset.
+        Packaged Unit Controller (PUC) is a sequential control board designed
+        for unitary air conditioning systems and is engineered with flexibility
+        to fulfill the needs of any unique Air conditioning OEM. It is
+        compatible with single, two, and four stage air conditioning systems, as
+        well as optional two-stage heating, a pump down system, and a variety of
+        other programmable options.
+      </Typography>
+      <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
+        It includes an integrated web browser for convenient monitoring and
+        diagnostics, as well as an embedded IoT edge for remote monitoring and
+        control over the cloud.
       </Typography>
     </Box>
   );

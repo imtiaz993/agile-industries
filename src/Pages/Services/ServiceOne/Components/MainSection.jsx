@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ServiceMainImage from "../../../../Assets/images/service-main-image.png";
+import ServiceMainImage from "../../../../Assets/images/Picture6.jpg";
 
 const MainSection = () => {
   return (
@@ -12,18 +12,20 @@ const MainSection = () => {
         },
       })}
     >
-      <Box>
-        <img width="100%" src={ServiceMainImage} alt="" />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <img width="75%" src={ServiceMainImage} alt="" />
       </Box>
       <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore Eu omnes nonumes reformidans sit, et eam
-        aperiam pertinacia. Te posse nostro labores pri, agam audire eu mei,
-        natum voluptaria an mel. Ut illud maiestatis nec, vis cu propriae
-        deterruisset.
+        The intelligent energy logger IEL-300 consists of a class 0.5 advanced
+        3- phase power and energy meter with a built-in data logger and an
+        integrated IoT edge gateway for IoT connectivity. It enables
+        user-friendly and simple remote tracking and monitoring of energy
+        consumption/production via IoT connectivity, but it may also be used as
+        a standalone power and energy logger with local web-browser
+        connectivity. Several versions are available to fit a wide range of
+        applications, including energy audits, solar system monitoring, telecom
+        site monitoring, street light monitoring and control, and general power
+        monitoring applications
       </Typography>
     </Box>
   );

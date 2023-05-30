@@ -8,9 +8,9 @@ const ServiceTwo = () => {
   return (
     <>
       <Hero
-        title="Service"
-        subTitle="02"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor , inventore incidunt adipisci. Nisi ut aliquip ex ea commodo consequatuis aute irure dolor in."
+        subTitle="Control and
+        Monitoring System for Air Conditioning
+        Manufacturers"
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>
         <MainSection />

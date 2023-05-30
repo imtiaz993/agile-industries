@@ -8,9 +8,8 @@ const ServiceOne = () => {
   return (
     <>
       <Hero
-        title="Service"
-        subTitle="01"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor , inventore incidunt adipisci. Nisi ut aliquip ex ea commodo consequatuis aute irure dolor in."
+        subTitle="Intelligent Power
+        Loggers"
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>
         <MainSection />

@@ -19,19 +19,6 @@ const DigitalTransmission = () => {
         <Typography
           sx={(theme) => ({
             display: "inline",
-            color: "#666666",
-            fontWeight: "500",
-            fontSize: "24px",
-            [theme.breakpoints.up("lg")]: {
-              fontSize: "30px",
-            },
-          })}
-        >
-          Start Your{" "}
-        </Typography>
-        <Typography
-          sx={(theme) => ({
-            display: "inline",
 
             color: "#004A79",
             fontWeight: "600",
@@ -41,7 +28,7 @@ const DigitalTransmission = () => {
             },
           })}
         >
-          Digital Transformation Journey
+          Your Digital Transformation Partner toward Industry 4.0
         </Typography>
       </Box>
       <Typography
@@ -53,11 +40,10 @@ const DigitalTransmission = () => {
           fontSize: "16px",
         }}
       >
-        Our purpose is to help OEMs reach their digital transformation goals and
-        adapt to the modern industry. Specialized in industrial IoT, we provide
-        full service from electronics design and development, prototyping,
-        software and hardware configurations, programming, testing, and
-        manufacturing.
+        We create Industrial Internet of Things (IoT) eco solutions to assist
+        enterprises, original equipment manufacturers (OEMs), sustainable
+        businesses, telecom infrastructure, farmers, and educational
+        institutions in achieving their automation and sustainability goals.
       </Typography>
       <img src={PowerEnergy} alt="" />
     </Box>

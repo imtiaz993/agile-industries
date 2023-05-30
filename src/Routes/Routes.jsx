@@ -17,9 +17,15 @@ const WebRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/service-one" element={<ServiceOne />} />
-        <Route path="/service-two" element={<ServiceTwo />} />
-        <Route path="/service-three" element={<ServiceThree />} />
+        <Route path="/intelligent-power-loggers" element={<ServiceOne />} />
+        <Route
+          path="/control-and-monitoring-system-for-air-conditioning-manufacturers"
+          element={<ServiceTwo />}
+        />
+        <Route
+          path="/iot-development-for-oems-&-prototyping"
+          element={<ServiceThree />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>

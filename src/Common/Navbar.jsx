@@ -9,15 +9,22 @@ const Navbar = () => {
   const location = useLocation();
   const [toggleNavbar, setToggleNavbar] = useState(false);
   const [selectedService, setSelectedService] = useState("");
+  const services = [
+    "/intelligent-power-loggers",
+    "/control-and-monitoring-system-for-air-conditioning-manufacturers",
+    "/iot-development-for-oems-&-prototyping",
+  ];
 
   useEffect(() => {
-    if (!location.pathname.includes("service")) {
+    if (!services.includes(location.pathname)) {
       setSelectedService("");
     }
   }, [location]);
 
   useEffect(() => {
-    navigate(selectedService);
+    if (selectedService) {
+      navigate(selectedService);
+    }
   }, [selectedService]);
 
   return (
@@ -82,9 +89,13 @@ const Navbar = () => {
               }}
             >
               <option style={{ display: "none" }}>Services</option>
-              <option value="service-one">Service 1</option>
-              <option value="service-two">Service 2</option>
-              <option value="service-three">Service 3</option>
+              <option value="intelligent-power-loggers">Service 1</option>
+              <option value="control-and-monitoring-system-for-air-conditioning-manufacturers">
+                Service 2
+              </option>
+              <option value="iot-development-for-oems-&-prototyping">
+                Service 3
+              </option>
             </select>
             <Link
               style={{
@@ -252,9 +263,13 @@ const Navbar = () => {
               }}
             >
               <option style={{ display: "none" }}>Services</option>
-              <option value="service-one">Service 1</option>
-              <option value="service-two">Service 2</option>
-              <option value="service-three">Service 3</option>
+              <option value="intelligent-power-loggers">Service 1</option>
+              <option value="control-and-monitoring-system-for-air-conditioning-manufacturers">
+                Service 2
+              </option>
+              <option value="iot-development-for-oems-&-prototyping">
+                Service 3
+              </option>
             </select>
             <Link
               onClick={() => {
