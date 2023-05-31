@@ -19,8 +19,7 @@ const Hero = ({ title, subTitle, text }) => {
       <Box sx={{ width: "80%", marginX: "auto" }}>
         <Box
           sx={(theme) => ({
-            display: "flex",
-            justifyContent:'center',
+            textAlign:"center",
             paddingTop: "112px",
             [theme.breakpoints.up("lg")]: {
               paddingTop: "176px",
@@ -30,6 +29,7 @@ const Hero = ({ title, subTitle, text }) => {
           <Typography
             sx={(theme) => ({
               color: "#FAFAFA",
+              display:"inline",
               textAlign: "center",
               fontSize: "30px",
               fontWeight: "600",
@@ -44,6 +44,8 @@ const Hero = ({ title, subTitle, text }) => {
           </Typography>
           <Typography
             sx={(theme) => ({
+              display:"inline",
+              whiteSpace:"nowrap",
               color: "#0BEAA1",
               textAlign: "center",
               fontSize: "30px",

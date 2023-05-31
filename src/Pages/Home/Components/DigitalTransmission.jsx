@@ -16,6 +16,19 @@ const DigitalTransmission = () => {
       })}
     >
       <Box>
+      <Typography
+          sx={(theme) => ({
+            display: "inline",
+            color: "#666666",
+            fontWeight: "500",
+            fontSize: "24px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
+          Your Digital Transformation Partner{" "}
+        </Typography>
         <Typography
           sx={(theme) => ({
             display: "inline",
@@ -28,7 +41,7 @@ const DigitalTransmission = () => {
             },
           })}
         >
-          Your Digital Transformation Partner toward Industry 4.0
+           toward Industry 4.0
         </Typography>
       </Box>
       <Typography

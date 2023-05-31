@@ -7,7 +7,8 @@ const Contact = () => {
   return (
     <>
       <Hero
-        subTitle="We’d love to hear from you"
+        title="We’d love to hear"
+        subTitle="from you"
         text="Have questions about our products or services? Our team of experts is on hand to answer your questions."
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>

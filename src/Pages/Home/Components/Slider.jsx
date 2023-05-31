@@ -95,7 +95,16 @@ const Slider = () => {
       })}
     >
       <SliderControls swiperRef={swiperRef} />
-      <Swiper ref={swiperRef} slidesPerView={1} modules={[Autoplay]}>
+      <Swiper
+        ref={swiperRef}
+        slidesPerView={1}
+        modules={[Autoplay]}
+        speed={1000}
+        autoplay={{
+          delay: 12000,
+          disableOnInteraction: false,
+        }}
+      >
         <SwiperSlide>
           <Box
             sx={(theme) => ({

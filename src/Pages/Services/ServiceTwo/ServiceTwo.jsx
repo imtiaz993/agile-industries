@@ -8,8 +8,9 @@ const ServiceTwo = () => {
   return (
     <>
       <Hero
-        subTitle="Control and
-        Monitoring System for Air Conditioning
+        title="Control and
+      Monitoring System for"
+        subTitle="Air Conditioning
         Manufacturers"
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>

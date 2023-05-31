@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 const About = () => {
   return (
     <>
-      <Hero subTitle="About Us" />
+      <Hero title="About" subTitle="Us" />
       <Box sx={{ width: "83%", marginX: "auto" }}>
         <CompanyProfile />
         <Team />

@@ -8,7 +8,8 @@ const ServiceOne = () => {
   return (
     <>
       <Hero
-        subTitle="Intelligent Power
+        title="Intelligent"
+        subTitle=" Power
         Loggers"
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>

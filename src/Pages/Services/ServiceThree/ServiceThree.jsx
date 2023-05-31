@@ -8,7 +8,8 @@ const ServiceThree = () => {
   return (
     <>
       <Hero
-        subTitle="IoT Development for
+        title="IoT Development for"
+        subTitle="
         OEMs & Prototyping"
       />
       <Box sx={{ width: "83%", marginX: "auto" }}>

@@ -6,6 +6,20 @@ const Team = () => {
   return (
     <Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Typography
+          sx={(theme) => ({
+            fontSize: "24px",
+            fontWeight: "600",
+            textAlign: "center",
+            color: "#666666",
+            marginRight: "10px",
+            [theme.breakpoints.up("lg")]: {
+              fontSize: "30px",
+            },
+          })}
+        >
+          Meet
+        </Typography>
         <Typography
           sx={(theme) => ({
             fontSize: "24px",
@@ -17,7 +31,7 @@ const Team = () => {
             },
           })}
         >
-          Meet Our Team
+          Our Team
         </Typography>
       </Box>
       <Typography
