@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import ServiceDetail1 from "../../../../Assets/images/Picture13.jpg";
-import ServiceDetail2 from "../../../../Assets/images/Picture14.jpg";
+import ServiceDetail2 from "../../../../Assets/images/Picture2.png";
 import ServiceDetail3 from "../../../../Assets/images/Picture15.jpg";
 
 const DetailSection = () => {
