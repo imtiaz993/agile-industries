@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ServiceMainImage from "../../../../Assets/images/Picture6.jpg";
+import ServiceMainImage from "../../../../Assets/images/power-energy-new.png";
 
 const MainSection = () => {
   return (
@@ -8,7 +8,7 @@ const MainSection = () => {
       sx={(theme) => ({
         my: 6,
         [theme.breakpoints.up("lg")]: {
-          my: 10,
+          mb: 10,
         },
       })}
     >

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import ServiceMainImage from "../../../../Assets/images/Picture16.jpg";
+import ServiceMainImage from "../../../../Assets/images/Picture16.png";
 
 const MainSection = () => {
   return (

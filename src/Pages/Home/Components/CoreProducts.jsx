@@ -1,5 +1,5 @@
 import React from "react";
-import PowerEnergy from "../../../Assets/images/power-energy.png";
+import PowerEnergy from "../../../Assets/images/power-energy-new.png";
 import AirCondition from "../../../Assets/images/air-condition.png";
 import OEM from "../../../Assets/images/oem.png";
 import { Box, Typography } from "@mui/material";

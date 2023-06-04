@@ -1,9 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-import Slide1 from "../../../Assets/images/Picture1.jpg";
-import Slide2 from "../../../Assets/images/Picture2.jpg";
-import Slide3 from "../../../Assets/images/Picture3.jpg";
+import Slide1 from "../../../Assets/images/Picture1.png";
+import Slide2 from "../../../Assets/images/Picture2.png";
+import Slide3 from "../../../Assets/images/Picture16.png";
 import LeftChevron from "../../../Assets/icons/left-chevron.svg";
 import RightChevron from "../../../Assets/icons/right-chevron.svg";
 import "swiper/swiper.min.css";
