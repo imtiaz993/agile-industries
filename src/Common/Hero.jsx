@@ -45,7 +45,6 @@ const Hero = ({ title, subTitle, text }) => {
           <Typography
             sx={(theme) => ({
               display:"inline",
-              whiteSpace:"nowrap",
               color: "#0BEAA1",
               textAlign: "center",
               fontSize: "30px",

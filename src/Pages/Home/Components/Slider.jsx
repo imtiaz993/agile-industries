@@ -163,7 +163,7 @@ const Slider = () => {
                 },
               })}
             >
-              <Box>
+              <Box sx={{maxWidth:"600px"}}>
                 <img width="100%" src={Slide1} alt="" />
               </Box>
               <Typography
@@ -255,7 +255,7 @@ const Slider = () => {
                 },
               })}
             >
-              <Box>
+              <Box sx={{maxWidth:"600px"}}>
                 <img width="100%" src={Slide2} alt="" />
               </Box>
               <Typography
@@ -345,7 +345,7 @@ const Slider = () => {
                 },
               })}
             >
-              <Box>
+              <Box sx={{maxWidth:"600px"}}>
                 <img width="100%" src={Slide3} alt="" />
               </Box>
               <Typography
