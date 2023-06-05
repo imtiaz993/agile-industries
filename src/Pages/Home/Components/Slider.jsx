@@ -162,8 +162,22 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
-                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide1} alt="" />
+              <Box
+                sx={(theme) => ({
+                  width: "300px",
+                  [theme.breakpoints.up("lg")]: {
+                    width: "400px",
+                    height: "300px",
+                    marginRight: "auto",
+                  },
+                   [theme.breakpoints.up("xxl")]: {
+                    width: "500px",
+                    height: "400px",
+                    marginRight: "auto",
+                  },
+                })}
+              >
+                <img className="slider-images" src={Slide1} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
@@ -253,8 +267,22 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
-                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide2} alt="" />
+              <Box
+                sx={(theme) => ({
+                  width: "300px",
+                  [theme.breakpoints.up("lg")]: {
+                    width: "400px",
+                    height: "300px",
+                    marginRight: "auto",
+                  },
+                   [theme.breakpoints.up("xxl")]: {
+                    width: "500px",
+                    height: "400px",
+                    marginRight: "auto",
+                  },
+                })}
+              >
+                <img className="slider-images" src={Slide2} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
@@ -342,8 +370,22 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
-                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide3} alt="" />
+              <Box
+                sx={(theme) => ({
+                  width: "300px",
+                  [theme.breakpoints.up("lg")]: {
+                    width: "400px",
+                    height: "300px",
+                    marginRight: "auto",
+                  },
+                   [theme.breakpoints.up("xxl")]: {
+                    width: "500px",
+                    height: "400px",
+                    marginRight: "auto",
+                  },
+                })}
+              >
+                <img className="slider-images" src={Slide3} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
