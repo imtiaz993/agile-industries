@@ -69,6 +69,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/"
             >
@@ -82,6 +83,7 @@ const Navbar = () => {
                 outline: "none",
                 border: "none",
                 cursor: "pointer",
+                fontWeight: "600",
               }}
               value={selectedService}
               onChange={(e) => {
@@ -89,11 +91,22 @@ const Navbar = () => {
               }}
             >
               <option style={{ display: "none" }}>Services</option>
-              <option value="intelligent-power-loggers">Service 1</option>
-              <option value="control-and-monitoring-system-for-air-conditioning-manufacturers">
+              <option
+                style={{ fontWeight: "600" }}
+                value="intelligent-power-loggers"
+              >
+                Service 1
+              </option>
+              <option
+                style={{ fontWeight: "600" }}
+                value="control-and-monitoring-system-for-air-conditioning-manufacturers"
+              >
                 Service 2
               </option>
-              <option value="iot-development-for-oems-&-prototyping">
+              <option
+                style={{ fontWeight: "600" }}
+                value="iot-development-for-oems-&-prototyping"
+              >
                 Service 3
               </option>
             </select>
@@ -103,6 +116,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/"
             >
@@ -114,6 +128,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/about"
             >
@@ -125,6 +140,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/contact"
             >
@@ -241,6 +257,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/"
             >
@@ -257,6 +274,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
+                fontWeight: "700",
                 marginLeft: "-4px",
                 border: "none",
                 cursor: "pointer",
@@ -280,6 +298,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/"
             >
@@ -294,6 +313,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/about"
             >
@@ -308,6 +328,7 @@ const Navbar = () => {
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
+                fontWeight: "700",
               }}
               to="/contact"
             >

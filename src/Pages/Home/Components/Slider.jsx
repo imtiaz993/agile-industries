@@ -90,7 +90,7 @@ const Slider = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         [theme.breakpoints.up("lg")]: {
-          height: "700px",
+          height: "fit-content",
         },
       })}
     >
