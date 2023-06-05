@@ -51,7 +51,7 @@ const CompanyProfile = () => {
         </Typography>
         <Box>
           <Typography
-            sx={{ color: "#666666", fontSize: "16px", marginTop: "24px" }}
+            sx={{ textAlign:'justify', color: "#666666", fontSize: "16px", marginTop: "24px" }}
           >
             Agile-industries was founded in 2016 with its headquarter in the UAE
             with the goal of providing specialised industrial IoT and automation
@@ -59,7 +59,7 @@ const CompanyProfile = () => {
             migrating to Industry 4.0 (Digital Transformation).
           </Typography>
           <Typography
-            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+            sx={{ textAlign:'justify', color: "#666666", fontSize: "16px", marginTop: "16px" }}
           >
             At agile-Industries, we develop Industrial IoT eco solutions to help
             businesses automate their processes and improve their efficiency.
@@ -68,12 +68,12 @@ const CompanyProfile = () => {
             value to our clients.
           </Typography>
           <Typography
-            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+            sx={{ textAlign:'justify', color: "#666666", fontSize: "16px", marginTop: "16px" }}
           >
             “Develop with Agility“
           </Typography>
           <Typography
-            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+            sx={{ textAlign:'justify', color: "#666666", fontSize: "16px", marginTop: "16px" }}
           >
             Our solutions are created with agility in order to adapt to changing
             client needs while keeping an integrated platform. This embraces a
@@ -82,7 +82,7 @@ const CompanyProfile = () => {
             production and manufacturing, and supply chain management.
           </Typography>
           <Typography
-            sx={{ color: "#666666", fontSize: "16px", marginTop: "16px" }}
+            sx={{ textAlign:'justify', color: "#666666", fontSize: "16px", marginTop: "16px" }}
           >
             We work closely with our clients to understand their specific needs
             and requirements, so that we can develop a tailored solution that

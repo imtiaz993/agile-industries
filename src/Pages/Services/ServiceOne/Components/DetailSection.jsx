@@ -51,17 +51,17 @@ const DetailSection = () => {
           >
             Solar Systems Monitoring
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={2}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={2}>
             Ne fugit essent persequeris sed. Qui dico dicam sadipscing no. Ius
             posse omnes eleifend ne, no sea amet oblique. Mea in wisi utinam
             facilisi. Ei lorem instructior sea, populo necessitatibus ut est.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Eu omnes nonumes reformidans sit, et eam aperiam pertinacia. Te
             posse nostro labores pri, agam audire eu mei, natum voluptaria an
             mel. Ut illud maiestatis nec, vis cu propriae deterruisset.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Ea mazim suavitate ius. Ei lorem instructior sea, populo
             necessitatibus ut est. Ne vix voluptua.Corporis facilis officia,
             excepturi dignissimos, vitae aut agam audire eu mei, natum
@@ -113,17 +113,17 @@ const DetailSection = () => {
           >
             BTS Monitoring
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={2}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={2}>
             Ne fugit essent persequeris sed. Qui dico dicam sadipscing no. Ius
             posse omnes eleifend ne, no sea amet oblique. Mea in wisi utinam
             facilisi. Ei lorem instructior sea, populo necessitatibus ut est.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Eu omnes nonumes reformidans sit, et eam aperiam pertinacia. Te
             posse nostro labores pri, agam audire eu mei, natum voluptaria an
             mel. Ut illud maiestatis nec, vis cu propriae deterruisset.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Ea mazim suavitate ius. Ei lorem instructior sea, populo
             necessitatibus ut est. Ne vix voluptua.Corporis facilis officia,
             excepturi dignissimos, vitae aut agam audire eu mei, natum
@@ -175,17 +175,17 @@ const DetailSection = () => {
           >
             Street Lights Monitoring
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={2}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={2}>
             Ne fugit essent persequeris sed. Qui dico dicam sadipscing no. Ius
             posse omnes eleifend ne, no sea amet oblique. Mea in wisi utinam
             facilisi. Ei lorem instructior sea, populo necessitatibus ut est.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Eu omnes nonumes reformidans sit, et eam aperiam pertinacia. Te
             posse nostro labores pri, agam audire eu mei, natum voluptaria an
             mel. Ut illud maiestatis nec, vis cu propriae deterruisset.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Ea mazim suavitate ius. Ei lorem instructior sea, populo
             necessitatibus ut est. Ne vix voluptua.Corporis facilis officia,
             excepturi dignissimos, vitae aut agam audire eu mei, natum
@@ -237,17 +237,17 @@ const DetailSection = () => {
           >
             Diesel Generator Control
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={2}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={2}>
             Ne fugit essent persequeris sed. Qui dico dicam sadipscing no. Ius
             posse omnes eleifend ne, no sea amet oblique. Mea in wisi utinam
             facilisi. Ei lorem instructior sea, populo necessitatibus ut est.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Eu omnes nonumes reformidans sit, et eam aperiam pertinacia. Te
             posse nostro labores pri, agam audire eu mei, natum voluptaria an
             mel. Ut illud maiestatis nec, vis cu propriae deterruisset.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify' }} mt={1.5}>
             Ea mazim suavitate ius. Ei lorem instructior sea, populo
             necessitatibus ut est. Ne vix voluptua.Corporis facilis officia,
             excepturi dignissimos, vitae aut agam audire eu mei, natum
@@ -299,17 +299,17 @@ const DetailSection = () => {
           >
             General Power Monitoring Applications
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={2}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify', }} mt={2}>
             Ne fugit essent persequeris sed. Qui dico dicam sadipscing no. Ius
             posse omnes eleifend ne, no sea amet oblique. Mea in wisi utinam
             facilisi. Ei lorem instructior sea, populo necessitatibus ut est.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify',}} mt={1.5}>
             Eu omnes nonumes reformidans sit, et eam aperiam pertinacia. Te
             posse nostro labores pri, agam audire eu mei, natum voluptaria an
             mel. Ut illud maiestatis nec, vis cu propriae deterruisset.
           </Typography>
-          <Typography sx={{ fontSize: "16px", color: "#333333" }} mt={1.5}>
+          <Typography sx={{ fontSize: "16px", color: "#333333", textAlign:'justify', }} mt={1.5}>
             Ea mazim suavitate ius. Ei lorem instructior sea, populo
             necessitatibus ut est. Ne vix voluptua.Corporis facilis officia,
             excepturi dignissimos, vitae aut agam audire eu mei, natum

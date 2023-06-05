@@ -12,10 +12,10 @@ const MainSection = () => {
         },
       })}
     >
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", maxWidth:"600px", marginX:'auto' }}>
         <img width="75%" src={ServiceMainImage} alt="" />
       </Box>
-      <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
+      <Typography sx={{ fontSize: "16px", color: "#666666", textAlign:'justify' }} mt={2}>
         The intelligent energy logger IEL-300 consists of a class 0.5 advanced
         3- phase power and energy meter with a built-in data logger and an
         integrated IoT edge gateway for IoT connectivity. It enables

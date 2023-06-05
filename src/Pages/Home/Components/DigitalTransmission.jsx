@@ -47,7 +47,7 @@ const DigitalTransmission = () => {
       <Typography
         sx={{
           marginBottom: "24px",
-          textAlign: "center",
+          textAlign: "justify",
           marginTop: "16px",
           color: "#666666",
           fontSize: "16px",

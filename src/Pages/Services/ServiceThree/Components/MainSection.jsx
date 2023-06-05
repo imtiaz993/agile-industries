@@ -12,10 +12,10 @@ const MainSection = () => {
         },
       })}
     >
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", maxWidth:"600px", marginX:'auto'  }}>
         <img width="75%" src={ServiceMainImage} alt="" />
       </Box>
-      <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
+      <Typography sx={{ fontSize: "16px", color: "#666666", textAlign:'justify' }} mt={2}>
         Bring your ideas to life with our IoT development specialized team. Our
         team collaborates with you from the initial concept to the finished
         product to help you reach your digital transformation goals.

@@ -80,7 +80,7 @@ const CoreProducts = () => {
               maxWidth: "320px",
             }}
           >
-            <img width="100%" src={PowerEnergy} alt="" />
+            <img width="90%" src={PowerEnergy} alt="" />
           </Box>
 
           <Typography
@@ -150,7 +150,7 @@ const CoreProducts = () => {
               maxWidth: "320px",
             }}
           >
-            <img width="100%" src={OEM} alt="" />
+            <img src={OEM} alt="" />
           </Box>
 
           <Typography

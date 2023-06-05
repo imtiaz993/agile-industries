@@ -12,10 +12,10 @@ const MainSection = () => {
         },
       })}
     >
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center", maxWidth:"600px", marginX:'auto'  }}>
         <img width="75%" src={ServiceMainImage} alt="" />
       </Box>
-      <Typography sx={{ fontSize: "16px", color: "#666666" }} mt={2}>
+      <Typography sx={{ fontSize: "16px", color: "#666666", textAlign:'justify' }} mt={2}>
         Packaged Unit Controller (PUC) is a sequential control board designed
         for unitary air conditioning systems and is engineered with flexibility
         to fulfill the needs of any unique Air conditioning OEM. It is

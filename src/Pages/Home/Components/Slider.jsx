@@ -133,14 +133,13 @@ const Slider = () => {
             >
               <Typography
                 sx={(theme) => ({
-                  display: "inline",
                   fontSize: "20px",
                   fontWeight: "500",
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "left",
-                    fontSize: "30px",
+                    textAlign: "justify",
+                    fontSize: "28px",
                   },
                 })}
               >
@@ -163,8 +162,8 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{maxWidth:"600px"}}>
-                <img width="100%" src={Slide1} alt="" />
+              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
+                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide1} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
@@ -226,14 +225,13 @@ const Slider = () => {
             >
               <Typography
                 sx={(theme) => ({
-                  display: "inline",
                   fontSize: "20px",
                   fontWeight: "500",
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "left",
-                    fontSize: "30px",
+                    textAlign: "justify",
+                    fontSize: "28px",
                   },
                 })}
               >
@@ -255,8 +253,8 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{maxWidth:"600px"}}>
-                <img width="100%" src={Slide2} alt="" />
+              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
+                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide2} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
@@ -318,14 +316,13 @@ const Slider = () => {
             >
               <Typography
                 sx={(theme) => ({
-                  display: "inline",
                   fontSize: "20px",
                   fontWeight: "500",
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "left",
-                    fontSize: "30px",
+                    textAlign: "justify",
+                    fontSize: "28px",
                   },
                 })}
               >
@@ -345,8 +342,8 @@ const Slider = () => {
                 },
               })}
             >
-              <Box sx={{maxWidth:"600px"}}>
-                <img width="100%" src={Slide3} alt="" />
+              <Box sx={{width:"400px",height:"300px", marginRight:"auto"}}>
+                <img style={{maxWidth:"400px", maxHeight:"300px"}} src={Slide3} alt="" />
               </Box>
               <Typography
                 sx={(theme) => ({
