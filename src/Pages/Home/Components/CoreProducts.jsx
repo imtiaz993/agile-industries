@@ -112,7 +112,7 @@ const CoreProducts = () => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              maxWidth: "320px",
+              maxWidth: "250px",
             }}
           >
             <img width="100%" src={AirCondition} alt="" />
