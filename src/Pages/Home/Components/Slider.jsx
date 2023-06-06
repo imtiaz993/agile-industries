@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-import Slide1 from "../../../Assets/images/power-energy-new.png";
+import Slide1 from "../../../Assets/images/Slide1.png";
 import Slide2 from "../../../Assets/images/Picture2.png";
 import Slide3 from "../../../Assets/images/Picture16.png";
 import LeftChevron from "../../../Assets/icons/left-chevron.svg";
