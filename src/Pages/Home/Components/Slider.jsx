@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from "swiper";
-import Slide1 from "../../../Assets/images/Picture1.png";
+import Slide1 from "../../../Assets/images/power-energy-new.png";
 import Slide2 from "../../../Assets/images/Picture2.png";
 import Slide3 from "../../../Assets/images/Picture16.png";
 import LeftChevron from "../../../Assets/icons/left-chevron.svg";
@@ -138,7 +138,6 @@ const Slider = () => {
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "justify",
                     fontSize: "28px",
                   },
                 })}
@@ -244,7 +243,6 @@ const Slider = () => {
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "justify",
                     fontSize: "28px",
                   },
                 })}
@@ -349,7 +347,6 @@ const Slider = () => {
                   lineHeight: "150%",
                   color: "#FAFAFA",
                   [theme.breakpoints.up("lg")]: {
-                    textAlign: "justify",
                     fontSize: "28px",
                   },
                 })}
