@@ -65,7 +65,7 @@ const Navbar = () => {
           <Box>
             <Link
               style={{
-                color: "#666666",
+                color: location.pathname === "/" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
@@ -77,7 +77,9 @@ const Navbar = () => {
             </Link>
             <select
               style={{
-                color: "#666666",
+                color: services.includes(location.pathname)
+                  ? "#0BEAA1"
+                  : "#666666",
                 fontSize: "16px",
                 marginLeft: "24px",
                 outline: "none",
@@ -112,7 +114,8 @@ const Navbar = () => {
             </select>
             <Link
               style={{
-                color: "#666666",
+                color:
+                  location.pathname === "/case-study" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
@@ -124,7 +127,7 @@ const Navbar = () => {
             </Link>
             <Link
               style={{
-                color: "#666666",
+                color: location.pathname === "/about" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
@@ -136,7 +139,7 @@ const Navbar = () => {
             </Link>
             <Link
               style={{
-                color: "#666666",
+                color: location.pathname === "/contact" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginLeft: "24px",
                 textDecoration: "none",
@@ -156,6 +159,10 @@ const Navbar = () => {
                 borderRadius: "12px",
                 fontWeight: "600",
                 color: "#FAFAFA",
+                "&:hover": {
+                  backgroundColor: "#3B7FBF",
+                  color: "#FAFAFA",
+                },
               }}
             >
               Portal
@@ -204,7 +211,7 @@ const Navbar = () => {
                   width: "32px",
                   height: "4px",
                   marginY: "4px",
-                  backgroundColor: "#004A79",
+                  backgroundColor: "#0BEAA1",
                 }}
               ></Box>
               <Box
@@ -212,7 +219,7 @@ const Navbar = () => {
                   width: "32px",
                   height: "4px",
                   marginY: "4px",
-                  backgroundColor: "#004A79",
+                  backgroundColor: "#0BEAA1",
                 }}
               ></Box>
               <Box
@@ -220,7 +227,7 @@ const Navbar = () => {
                   width: "32px",
                   height: "4px",
                   marginY: "4px",
-                  backgroundColor: "#004A79",
+                  backgroundColor: "#0BEAA1",
                 }}
               ></Box>
             </Box>
@@ -232,7 +239,14 @@ const Navbar = () => {
               }}
             >
               <Typography
-                sx={{ fontSize: "36px", fontWeight: "700", color: "#004A79" }}
+                sx={{
+                  fontSize: "36px",
+                  fontWeight: "700",
+                  "&:hover": {
+                    color: "#0BEAA1"
+                  },
+                  color: "#0BEAA1",
+                }}
               >
                 X
               </Typography>
@@ -253,7 +267,7 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               style={{
-                color: "#666666",
+                color: location.pathname === "/" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
@@ -270,7 +284,9 @@ const Navbar = () => {
                 setSelectedService(e.target.value);
               }}
               style={{
-                color: "#666666",
+                color: services.includes(location.pathname)
+                  ? "#0BEAA1"
+                  : "#666666",
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
@@ -294,7 +310,8 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               style={{
-                color: "#666666",
+                color:
+                  location.pathname === "case-study" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
@@ -309,7 +326,7 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               style={{
-                color: "#666666",
+                color: location.pathname === "/about" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
@@ -324,7 +341,7 @@ const Navbar = () => {
                 setToggleNavbar(false);
               }}
               style={{
-                color: "#666666",
+                color: location.pathname === "/contact" ? "#0BEAA1" : "#666666",
                 fontSize: "16px",
                 marginBottom: "16px",
                 textDecoration: "none",
@@ -345,6 +362,10 @@ const Navbar = () => {
                 borderRadius: "12px",
                 fontWeight: "600",
                 color: "#FAFAFA",
+                "&:hover": {
+                  backgroundColor: "#3B7FBF",
+                  color: "#FAFAFA",
+                },
               }}
             >
               Portal

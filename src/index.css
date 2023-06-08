@@ -3,6 +3,15 @@ body {
   font-family: ui-sans-serif, system-ui;
 }
 
+a{
+  text-decoration: none;
+}
+a:hover{
+    color: #0BEAA1 !important
+}
+select:hover{
+  color: #0BEAA1 !important
+}
 .slider-images {
   max-width: 300px;
 }

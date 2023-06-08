@@ -43,6 +43,9 @@ const SliderControls = ({ swiperRef }) => (
             width: "40px",
             height: "40px",
           },
+           "&:hover": {
+              backgroundColor: "#87BDE8",
+          }
         })}
         onClick={() => swiperRef.current.swiper.slidePrev()}
       >
@@ -62,6 +65,9 @@ const SliderControls = ({ swiperRef }) => (
             width: "40px",
             height: "40px",
           },
+           "&:hover": {
+              backgroundColor: "#87BDE8"
+          }
         })}
         onClick={() => swiperRef.current.swiper.slideNext()}
       >
@@ -202,7 +208,9 @@ const Slider = () => {
                     fontSize: "14px",
                     fontWeight: "500",
                     color: "#EEEEEE",
+                    overflow:"hidden"
                   }}
+                  className={'hvr-sweep-to-right'}
                 >
                   Learn More
                 </Button>
@@ -306,7 +314,9 @@ const Slider = () => {
                     fontSize: "14px",
                     fontWeight: "500",
                     color: "#EEEEEE",
+                    overflow:"hidden"
                   }}
+                  className={'hvr-sweep-to-right'}
                 >
                   Learn More
                 </Button>
@@ -408,7 +418,9 @@ const Slider = () => {
                     fontSize: "14px",
                     fontWeight: "500",
                     color: "#EEEEEE",
+                    overflow:"hidden"
                   }}
+                  className={'hvr-sweep-to-right'}
                 >
                   Learn More
                 </Button>

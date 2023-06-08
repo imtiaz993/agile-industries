@@ -129,10 +129,10 @@ const Form = () => {
             fontSize: "18px",
             paddingY: "10px",
             width: "100%",
+            overflow:"hidden",
             "&:hover": {
-              backgroundColor: "#004A79",
-            },
-          }}
+              backgroundColor: "#3B7FBF",
+          }}}
         >
           Submit
         </Button>

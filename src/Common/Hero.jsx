@@ -7,7 +7,7 @@ const Hero = ({ title, subTitle, text }) => {
       sx={(theme) => ({
         width: "100%",
         height: "350px",
-        backgroundImage: 'url("/pages-hero-bg.png")',
+        backgroundColor: "#002A42",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

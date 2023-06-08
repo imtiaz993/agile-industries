@@ -2,9 +2,12 @@ import React from "react";
 import PowerEnergy from "../../../Assets/images/power-energy-new.png";
 import AirCondition from "../../../Assets/images/air-condition.png";
 import OEM from "../../../Assets/images/oem.png";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, makeStyles } from "@mui/material";
+import 'hover.css/css/hover.css';
+import { Link } from "react-router-dom";
 
 const CoreProducts = () => {
+ 
   return (
     <Box
       sx={(theme) => ({
@@ -60,6 +63,7 @@ const CoreProducts = () => {
           },
         })}
       >
+      
         <Box
           sx={{
             borderRadius: "12px",
@@ -68,8 +72,11 @@ const CoreProducts = () => {
             paddingX: "8px",
             paddingY: "16px",
             border: "1px solid #666666",
+            cursor:"pointer"
           }}
+          className={'hvr-float-shadow'}
         >
+            <Link to="/intelligent-power-loggers">
           <Box
             sx={{
               height: "176px",
@@ -94,7 +101,9 @@ const CoreProducts = () => {
           >
             Power & Energy Monitoring
           </Typography>
+          </Link>
         </Box>
+    
         <Box
           sx={{
             borderRadius: "12px",
@@ -103,8 +112,11 @@ const CoreProducts = () => {
             paddingX: "8px",
             paddingY: "16px",
             border: "1px solid #666666",
+            cursor:"pointer"
           }}
+          className={'hvr-float-shadow'}
         >
+              <Link to="/control-and-monitoring-system-for-air-conditioning-manufacturers">
           <Box
             sx={{
               height: "176px",
@@ -129,7 +141,9 @@ const CoreProducts = () => {
           >
             Air Conditioner & Controllers
           </Typography>
+          </Link>
         </Box>
+       
         <Box
           sx={{
             borderRadius: "12px",
@@ -138,8 +152,11 @@ const CoreProducts = () => {
             paddingX: "8px",
             paddingY: "16px",
             border: "1px solid #666666",
+            cursor:"pointer"
           }}
+          className={'hvr-float-shadow'}
         >
+           <Link to="/iot-development-for-oems-&-prototyping">
           <Box
             sx={{
               height: "176px",
@@ -164,6 +181,7 @@ const CoreProducts = () => {
           >
             IoT Development for OEMs & Prototyping
           </Typography>
+          </Link>
         </Box>
       </Box>
     </Box>
